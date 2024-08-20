@@ -17,4 +17,4 @@ COPY . .
 # RUN npm run build
 
 # Run the application using ts-node
-CMD ["ts-node", "src/bot.ts"]
+CMD ["npm", "run", "start"]

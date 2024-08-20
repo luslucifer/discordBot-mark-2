@@ -13,7 +13,7 @@ export async function crazyBrowser(brandN: string): Promise<string> {
     const brandPageLink: string = 'https://creators.joinmavely.com/brands';
     const info: Info = JSON.parse(readData);
 
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     try {
